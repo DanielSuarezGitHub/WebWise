@@ -1,0 +1,46 @@
+<!-- popup.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AI Chat Extension Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="settings-container">
+    <h2>AI Chat Settings</h2>
+
+    <div class="settings-item">
+      <label for="modelSelect">Model:</label>
+      <select id="modelSelect">
+        <!-- Options will be populated -->
+      </select>
+    </div>
+    
+
+    <div class="settings-item">
+      <label for="openaiApiKey">OpenAI API Key:</label>
+      <input type="text" id="openaiApiKey" placeholder="Enter OpenAI API Key">
+    </div>
+    
+
+    <div class="settings-item">
+      <label for="includeContext">
+        <input type="checkbox" id="includeContext">
+        Include webpage content in messages
+      </label>
+    </div>
+    
+
+    <div class="settings-item">
+      <button id="saveSettingsBtn">Save Settings</button>
+    </div>
+
+    <div id="statusMessage" class="status-message"></div>
+  </div>
+  
+
+  <script src="popup.js"></script>
+</body>
+</html>

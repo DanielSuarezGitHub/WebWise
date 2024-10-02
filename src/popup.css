@@ -1,0 +1,101 @@
+/* popup.css */
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+/* Settings Container */
+.settings-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Individual Settings Item */
+.settings-item {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.settings-item label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #555;
+}
+
+/* Select Dropdowns and Input Fields */
+.settings-item select,
+.settings-item input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Checkbox */
+.settings-item input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Select Dropdown Hover and Focus */
+.settings-item select:hover,
+.settings-item select:focus,
+.settings-item input[type="text"]:hover,
+.settings-item input[type="text"]:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+/* Save Settings Button */
+#saveSettingsBtn {
+  padding: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+/* Save Settings Button Hover */
+#saveSettingsBtn:hover {
+  background-color: #357ab8;
+}
+
+/* Status Message */
+.status-message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+  height: 20px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  body {
+    padding: 15px;
+  }
+
+  #saveSettingsBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
