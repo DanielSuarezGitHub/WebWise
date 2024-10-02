@@ -1,3 +1,8 @@
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!******************************!*\
+  !*** ./src/contentScript.js ***!
+  \******************************/
 // ------------------- Inline Completion Logic -------------------
 const REGEX_PATTERN = /\/.*?;/;
 
@@ -945,3 +950,7 @@ createChatSidebarAlpha();
 
 
 console.log(chrome.runtime.getURL('images/close.svg'))
+
+/******/ })()
+;
+//# sourceMappingURL=contentScript.js.map
